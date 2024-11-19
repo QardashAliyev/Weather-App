@@ -1,0 +1,160 @@
+/* Ümumi tərtibat */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/* Form və onun daxilindəki elementlər */
+/* Form və hava məlumatları arasındakı məsafəni artırmaq */
+#input-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 40px;
+    /* Form ilə hava bölməsi arasında məsafə */
+}
+
+/* Hava məlumatları bölməsi */
+.weather {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 45px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Məlumat daxil etmə sahəsi */
+#input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Tarix seçimi */
+#date {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ADD və Clear düymələri */
+#check,
+#clear {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#check {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#check:hover {
+    background-color: #45a049;
+}
+
+#clear {
+    background-color: #f44336;
+    color: white;
+}
+
+#clear:hover {
+    background-color: #e53935;
+}
+
+/* Ölkə adı göstərəni */
+#country {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Hava temperaturu göstərəni */
+#temperature {
+    font-size: 36px;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+
+/* Card dizaynı */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Hover zamanı kartın böyüməsi */
+}
+
+/* Şəkil tərtibatı */
+.images {
+    border-radius: 10px;
+    width: 100%;
+    /* Şəkil kartın eni boyu olacaq */
+    height: auto;
+    /* Yükseklik avtomatik uyğunlaşır */
+}
+
+/* Başlıq üçün tərtibat (h2) */
+.card h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+/* Responsive dizayn */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        /* Kiçik ekranlarda kartın eni tam olacaq */
+    }
+}
+
+
+/* Responsive tərtibat */
+@media (max-width: 600px) {
+    #input-form {
+        padding: 15px;
+    }
+
+    #check,
+    #clear {
+        width: 100%;
+    }
+}
